@@ -1,44 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>start here</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script
-      src="https://kit.fontawesome.com/85d667d854.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <div class="container">
-      <div class="search-bar"></div>
-      <div class="links">
-        <a class="link" href="https://youtube.com"
-          ><i class="fab fa-youtube"></i> YouTube</a
-        >
 
-        <a class="link" href="https://netflix.com"
-          ><i class="fas fa-film"></i> Netflix</a
-        >
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>start here</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/ad1896aad6.js" crossorigin="anonymous"></script>
+</head>
 
-        <a
-          class="link"
-          href="https://globoplay.globo.com/tv-globo/ao-vivo/6120663/"
-          rel="noopener noreferrer"
-          ><i class="fas fa-film"></i> GloboPlay</a
-        >
-      </div>
-      <div class="links">
-        <a class="link" href="https://mubi.com"
-          ><i class="fas fa-film"></i> Mubi</a
-        >
-
-        <a class="link" href="https://www.shortoftheweek.com/"
-          ><i class="fas fa-film"></i> Short of the Week</a
-        >
-      </div>
+<body>
+  <div class="container">
+    <div class="logo">
+      <i class="fa-brands fa-raspberry-pi"></i>
     </div>
-  </body>
+    <div class="links">
+      <a class="link" href="https://youtube.com"><i class="fab fa-youtube"></i> YouTube</a>
+
+      <a class="link" href="https://netflix.com"><i class="fas fa-ticket"></i> Netflix</a>
+
+      <a class="link" href="https://globoplay.globo.com/tv-globo/ao-vivo/6120663/" rel="noopener noreferrer"><i
+          class="fas fa-video"></i> GloboPlay</a>
+    </div>
+    <div class="links">
+      <a class="link" href="https://mubi.com"><i class="fas fa-film"></i> Mubi</a>
+
+      <a class="link" href="https://www.shortoftheweek.com/"><i class="fas fa-tape"></i> Short of the Week</a>
+    </div>
+    <p id="time"></p>
+  </div>
+
+  <script>
+    window.setInterval(()=>{
+      d = new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+      document.getElementById('time').innerHTML = d;
+    }, 1000) 
+  </script>
+</body>
+
 </html>

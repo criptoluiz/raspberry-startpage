@@ -5,7 +5,7 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .container {
-  background-color: #5a5050;
+  background-color: #171C2D;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -20,15 +20,16 @@
 
 a {
   text-decoration: none;
-  color: #e5eec1;
+  color: #EAB56F;
 }
 
 .link {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 1em;
-  border: 1px solid #e5eec1;
+  justify-content: space-around;
+  margin: 0.5em;
+  border: 1px solid #EAB56F;
   padding: 1em;
   font-size: 20px;
   transition-duration: 0.3s;
@@ -37,7 +38,32 @@ a {
 }
 
 .link:hover {
-  background-color: #e5eec1;
+  background-color: #EAB56F;
   transition-duration: 0.3s;
-  color: #5a5050;
+  color: #171C2D;
+}
+
+#time {
+  font-size: 34px;
+  font-weight: 600;
+  color: #EAB56F;
+  margin-top: 25px;
+}
+
+.logo {
+  color: #EAB56F;
+  font-size: 60px;
+  border: 2px solid #EAB56F;
+  padding: 30px 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.logo i {
+  margin: 0;
+  padding: 0;
+  margin-left: -3px;
+  margin-top: -3px;
 }
